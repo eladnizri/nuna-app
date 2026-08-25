@@ -877,7 +877,6 @@ export default function App() {
         fontFamily: "'Varela Round', 'Heebo', system-ui, sans-serif",
       }}>
       <style>{`
-        @import url('https://fonts.googleapis.com/css2?family=Varela+Round&family=Heebo:wght@400;700;900&display=swap');
         .nona-slider { -webkit-appearance:none; appearance:none; height:14px; border-radius:99px; outline:none; }
         .nona-slider::-webkit-slider-thumb { -webkit-appearance:none; width:30px; height:30px; border-radius:50%; background:#fff; border:4px solid ${C.pinkDeep}; box-shadow:0 4px 10px rgba(0,0,0,.2); cursor:pointer; }
         .nona-slider::-moz-range-thumb { width:26px; height:26px; border-radius:50%; background:#fff; border:4px solid ${C.pinkDeep}; box-shadow:0 4px 10px rgba(0,0,0,.2); cursor:pointer; }
@@ -983,7 +982,7 @@ export default function App() {
             return (
               <button key={s.id} onClick={() => openStage(s.id)}
                 className="absolute flex flex-col items-center"
-                style={{ left: `${(s.x / 400) * 100}%`, top: `${(s.y / 1250) * 100}%`, transform: "translate(50%, -50%)" }}>
+                style={{ left: `${(s.x / 400) * 100}%`, top: `${(s.y / 1250) * 100}%`, transform: "translate(-50%, -50%)" }}>
                 <div className={`nona-bob flex items-center justify-center rounded-full text-3xl ${done ? "" : "nona-glow"}`}
                   style={{ width: 78, height: 78, background: s.color, border: "5px solid #fff",
                     boxShadow: `0 8px 0 ${s.deep}, 0 14px 26px rgba(0,0,0,0.16)`, animationDelay: `${i * 0.3}s` }}>
