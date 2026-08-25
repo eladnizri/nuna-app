@@ -1,0 +1,8 @@
+@import "tailwindcss";
+
+html,
+body {
+  margin: 0;
+  background: #ffeaf3;
+  -webkit-text-size-adjust: 100%;
+}
