@@ -4,6 +4,6 @@ import tailwindcss from "@tailwindcss/vite";
 
 // base מותאם ל-GitHub Pages של פרויקט: https://<user>.github.io/nuna-app/
 export default defineConfig({
-  base: "/nuna-app/",
+  base: process.env.GITHUB_ACTIONS ? "/nuna-app/" : "/",
   plugins: [react(), tailwindcss()],
 });
